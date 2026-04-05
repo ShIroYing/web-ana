@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"lib": ["DOM", "ES2022"],
+		"types": ["@rsbuild/core/types"],
+		"jsx": "react-jsx",
+		"target": "ES2022",
+		"noEmit": true,
+		"skipLibCheck": true,
+		"jsxImportSource": "preact",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"moduleResolution": "bundler",
+		"verbatimModuleSyntax": true,
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+		"noUncheckedSideEffectImports": true,
+		"paths": {
+			"react": ["./node_modules/preact/compat/"],
+			"react-dom": ["./node_modules/preact/compat/"]
+		},
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noUncheckedIndexedAccess": true
+	},
+	"include": ["src"]
+}
