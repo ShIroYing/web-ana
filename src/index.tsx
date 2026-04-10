@@ -20,9 +20,9 @@ const Desc = () => {
 		() =>
 			void fetch('https://www.clarity.ms/', {
 				method: 'HEAD',
-				mode: 'no-cors',
+				mode: 'no-cors'
 			}).catch(() => setNetError(true)),
-		[],
+		[]
 	)
 
 	return (
@@ -57,12 +57,12 @@ const Toast = () => {
 					window.parent.document.cookie = `_ja7_ana=1; Max-Age=13145200; Path=/; SameSite=Lax${sec}`
 					window.parent.clarity?.('consent', true)
 					window.parent._ja7_iframe_remove?.()
-				},
+				}
 			},
 			cancel: {
 				label: txt('reject'),
-				onClick: () => window.parent._ja7_iframe_remove?.(),
-			},
+				onClick: () => window.parent._ja7_iframe_remove?.()
+			}
 		})
 	}, [])
 

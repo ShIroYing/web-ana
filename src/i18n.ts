@@ -16,8 +16,8 @@ i18n.use(LanguageDetector)
 					rejectWarn: '拒绝可能会导致使用体验下降',
 					netError: '当前网络环境异常',
 					accept: '允许',
-					reject: '拒绝',
-				},
+					reject: '拒绝'
+				}
 			},
 			zh: {
 				translation: {
@@ -27,8 +27,8 @@ i18n.use(LanguageDetector)
 					rejectWarn: '拒絕可能會導致使用體驗下降',
 					netError: '當前網路環境異常',
 					accept: '允許',
-					reject: '拒絕',
-				},
+					reject: '拒絕'
+				}
 			},
 			en: {
 				translation: {
@@ -38,10 +38,10 @@ i18n.use(LanguageDetector)
 					rejectWarn: 'Rejecting may downgrade your experience',
 					netError: 'Network anomaly detected',
 					accept: 'Accept',
-					reject: 'Reject',
-				},
-			},
-		},
+					reject: 'Reject'
+				}
+			}
+		}
 	})
 
 export default i18n

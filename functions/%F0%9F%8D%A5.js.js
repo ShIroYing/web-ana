@@ -21,7 +21,7 @@ export const onRequest = async ctx => {
 
 		const cwaData = JSON.stringify({
 			token: cwa,
-			send: { to: `${url.origin}/🍥` },
+			send: { to: `${url.origin}/🍥` }
 		})
 		const cwaFunc = function (dat) {
 			document.currentScript?.setAttribute('data-cf-beacon', dat)
@@ -75,7 +75,7 @@ export const onRequest = async ctx => {
 	return new Response(anaScript, {
 		headers: {
 			'Content-Type': 'application/javascript; charset=UTF-8',
-			'Cache-Control': 'public, max-age=520',
-		},
+			'Cache-Control': 'public, max-age=520'
+		}
 	})
 }

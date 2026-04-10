@@ -23,30 +23,30 @@ export default defineConfig({
 			removeScriptTypeAttributes: true,
 			removeStyleLinkTypeAttributes: true,
 			trimCustomFragments: true,
-			useShortDoctype: true,
-		}),
+			useShortDoctype: true
+		})
 	],
 	html: {
 		mountId: '',
-		title: '',
+		title: ''
 	},
 	output: {
 		distPath: {
 			js: '',
 			jsAsync: '',
 			css: '',
-			cssAsync: '',
+			cssAsync: ''
 		},
 		filename: {
 			html: 'iframe.html',
-			css: 'iframe.css',
+			css: 'iframe.css'
 		},
 		inlineScripts: true,
-		polyfill: 'usage',
+		polyfill: 'usage'
 	},
 	performance: {
 		chunkSplit: {
-			strategy: 'all-in-one',
-		},
-	},
+			strategy: 'all-in-one'
+		}
+	}
 })

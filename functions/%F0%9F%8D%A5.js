@@ -10,8 +10,8 @@ export const onRequest = async ctx => {
 				'Access-Control-Allow-Methods': 'POST, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
 				'Access-Control-Allow-Credentials': 'true',
-				'Access-Control-Max-Age': '13142',
-			},
+				'Access-Control-Max-Age': '13142'
+			}
 		})
 
 	const { search } = new URL(request.url)
