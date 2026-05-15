@@ -9,14 +9,14 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
-		"i18next": "^26.0.10",
+		"i18next": "^26.2.0",
 		"i18next-browser-languagedetector": "^8.2.1",
 		"preact": "^10.29.1",
-		"react-i18next": "^17.0.7",
+		"react-i18next": "^17.0.8",
 		"sonner": "^2.0.7"
 	},
 	"devDependencies": {
-		"@rsbuild/core": "^2.0.5",
+		"@rsbuild/core": "^2.0.6",
 		"@rsbuild/plugin-preact": "^1.7.2",
 		"@tailwindcss/postcss": "^4.3.0",
 		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
