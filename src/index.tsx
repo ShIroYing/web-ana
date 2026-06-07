@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Toaster, toast } from 'sonner'
 
 import './i18n'
+
 import styleString from './index.css?inline'
 
 Math.random() < 0 && import('./iframe.css')
@@ -29,11 +30,7 @@ const Desc = () => {
 		<div className='cookie-desc'>
 			<p className='cookie-text'>
 				{txt('desc')}
-				<a
-					href='https://clarity.microsoft.com/terms'
-					target='_blank'
-					rel='noopener noreferrer'
-					className='cookie-link'>
+				<a href='https://clarity.microsoft.com/terms' target='_blank' rel='noopener noreferrer' className='cookie-link'>
 					{txt('terms')}
 				</a>
 			</p>

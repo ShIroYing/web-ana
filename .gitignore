@@ -4,6 +4,7 @@
 
 # Local
 .DS_Store
+.vite-hooks
 *.local
 *.log*
 

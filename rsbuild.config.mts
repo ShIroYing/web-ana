@@ -1,7 +1,6 @@
-import { pluginHtmlMinifierTerser } from 'rsbuild-plugin-html-minifier-terser'
-
 import { defineConfig } from '@rsbuild/core'
 import { pluginPreact } from '@rsbuild/plugin-preact'
+import { pluginHtmlMinifierTerser } from 'rsbuild-plugin-html-minifier-terser'
 
 export default defineConfig({
 	plugins: [
