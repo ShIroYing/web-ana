@@ -6,7 +6,6 @@
 		"dev": "rsbuild dev",
 		"build": "rsbuild build",
 		"preview": "rsbuild preview",
-		"prepare": "vp config",
 		"format": "vp fmt"
 	},
 	"dependencies": {
@@ -17,14 +16,14 @@
 		"sonner": "^2.0.7"
 	},
 	"devDependencies": {
-		"@rsbuild/core": "^2.0.11",
+		"@rsbuild/core": "^2.0.15",
 		"@rsbuild/plugin-preact": "^2.0.0",
-		"@tailwindcss/postcss": "^4.3.0",
+		"@tailwindcss/postcss": "^4.3.1",
 		"autoprefixer": "^10.5.0",
 		"core-js": "^3.49.0",
 		"rsbuild-plugin-html-minifier-terser": "^1.1.5",
-		"tailwindcss": "^4.3.0",
+		"tailwindcss": "^4.3.1",
 		"typescript": "^6.0.3",
-		"vite-plus": "^0.1.24"
+		"vite-plus": "^0.2.1"
 	}
 }
