@@ -26,8 +26,8 @@ export const onRequest = async ctx => {
 		const cwaFunc = function (dat) {
 			document.currentScript?.setAttribute('data-cf-beacon', dat)
 		}
-		anaScript += `\n;(${cwaFunc.toString().replace(/\s+/g, '')})('${cwaData}')`
-		anaScript += `\n${cwaCode}`
+		anaScript += `;(${cwaFunc.toString().replace(/\s+/g, '')})('${cwaData}')`
+		anaScript += `\n;${cwaCode}`
 	}
 
 	if (msc) {
@@ -68,8 +68,9 @@ export const onRequest = async ctx => {
 					window.addEventListener('DOMContentLoaded', () => document.body.appendChild(iframe), { once: true })
 			} catch {}
 		}
-		anaScript += `\n;(${mscFunc.toString().replace(/(?<![A-Za-z])\s+|\s+(?![A-Za-z])|(?<=[A-Za-z]) {2,}(?=[A-Za-z])/g, '')})('${url.origin}')`
-		anaScript += `\n${mscCode}`
+		if (cwa) anaScript += `\n`
+		anaScript += `;(${mscFunc.toString().replace(/(?<![A-Za-z])\s+|\s+(?![A-Za-z])|(?<=[A-Za-z]) {2,}(?=[A-Za-z])/g, '')})('${url.origin}')`
+		anaScript += `\n;${mscCode}`
 	}
 
 	return new Response(anaScript, {
