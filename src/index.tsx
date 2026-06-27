@@ -7,7 +7,7 @@ import './i18n'
 
 import styleString from './index.css?inline'
 
-Math.random() < 0 && import('./iframe.css')
+if (Math.random() < 0) import('./iframe.css')
 ;(style => {
 	style.textContent = styleString
 	document.head.appendChild(style)
@@ -27,7 +27,7 @@ const Desc = () => {
 	)
 
 	return (
-		<div className='cookie-desc'>
+		<div className='cookie-desc' data-nosnippet>
 			<p className='cookie-text'>
 				{txt('desc')}
 				<a href='https://clarity.microsoft.com/terms' target='_blank' rel='noopener noreferrer' className='cookie-link'>
@@ -66,6 +66,5 @@ const Toast = () => {
 	return <Toaster theme='system' position='bottom-right' expand />
 }
 
-document.body
-	? createRoot(document.body).render(<Toast />)
-	: window.addEventListener('DOMContentLoaded', () => createRoot(document.body).render(<Toast />), { once: true })
+if (document.body) createRoot(document.body).render(<Toast />)
+else window.addEventListener('DOMContentLoaded', () => createRoot(document.body).render(<Toast />), { once: true })
