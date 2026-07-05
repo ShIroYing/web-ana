@@ -55,6 +55,7 @@ export const onRequest = async ctx => {
 				})(document.createElement('link'))
 				const iframe = await (async function (iframe) {
 					iframe.id = 'ja7-iframe'
+					iframe.title = 'Analytics consent notice'
 					iframe.srcdoc = await (await fetch(`${origin}/iframe.html`)).text()
 					return iframe
 				})(document.createElement('iframe'))
@@ -64,8 +65,10 @@ export const onRequest = async ctx => {
 					delete window._ja7_iframe_remove
 				}
 
-				document.body?.appendChild(iframe) ??
+				void (
+					document.body?.appendChild(iframe) ??
 					window.addEventListener('DOMContentLoaded', () => document.body.appendChild(iframe), { once: true })
+				)
 			} catch {}
 		}
 		if (cwa) anaScript += `\n`
