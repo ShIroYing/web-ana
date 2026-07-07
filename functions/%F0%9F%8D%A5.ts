@@ -1,6 +1,4 @@
-export const onRequest = async ctx => {
-	const { request } = ctx
-
+export const onRequest: PagesFunction = async ({ request }) => {
 	if (request.method !== 'POST' && request.method !== 'OPTIONS') return new Response(null, { status: 405 })
 
 	if (request.method === 'OPTIONS')

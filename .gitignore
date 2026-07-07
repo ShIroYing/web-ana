@@ -11,6 +11,7 @@
 # Dist
 node_modules
 dist/
+*.tsbuildinfo
 
 # Profile
 .rspack-profile-*/
