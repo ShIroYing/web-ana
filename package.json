@@ -12,9 +12,9 @@
 		"@microsoft/clarity": "^1.0.2"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^5.20260707.1",
-		"@rsbuild/core": "^2.1.4",
-		"typescript": "^6.0.3",
-		"vite-plus": "^0.2.2"
+		"@cloudflare/workers-types": "^5.20260708.1",
+		"@rsbuild/core": "^2.1.5",
+		"typescript": "^7.0.2",
+		"vite-plus": "^0.2.4"
 	}
 }
